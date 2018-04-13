@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import pythonhash
+open(1, "w").write("#pythoniscool\n")
