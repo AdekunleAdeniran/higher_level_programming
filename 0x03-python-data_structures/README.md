@@ -161,6 +161,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 * Return: 0 if it is not a palindrome, 1 if it is a palindrome
 * An empty list is considered a palindrome
 
-**AUTHOR**
-Adekunle Adeniran
+## AUTHOR
+**Adekunle Adeniran**
+
 *FULL STACK ENGINEER*
