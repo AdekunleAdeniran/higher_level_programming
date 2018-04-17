@@ -17,9 +17,10 @@ At the end of this project you are expected to be able to explain to anyone, wit
 
 **Exercises**
 
-0. Print a list of integers
+**0. Print a list of integers**
 
    Write a function that prints all integers of a list.
+
 * Prototype: def print_list_integer(my_list=[]):
 * Format: one integer per line. See example
 * You are not allowed to import any module
