@@ -36,6 +36,7 @@ int is_palindrome(listint_t **head)
 	listint_t *temp = *head;
 	listint_t *temp1 = *head;
 	listint_t *temp2 = NULL;
+	int length = 0, count;
 
 	if (*head == NULL || head == NULL)
 	{
@@ -46,9 +47,11 @@ int is_palindrome(listint_t **head)
 	{
 		add_nodeint_end(&temp2, temp->n);
 		temp = temp->next;
+		length++;
 	}
 	reverse_listint(&temp2);
-	while (temp1 != NULL)
+	count = 0;
+	while (temp1 != NULL && count < (length / 2))
 	{
 		if (temp1->n == temp2->n)
 		{
