@@ -1,16 +1,10 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    if len(tuple_a) == 0:
-        tuple_a = (0, 0)
-    if len(tuple_a) == 1:
-        tuplea1 = [tuple_a[0], 0]
-        tuple_a = tuple_a1[0], tuple_a1[1]
-    if len(tuple_b) == 0:
-        tuple_b = (0, 0)
-    if len(tuple_b) == 1:
-        tuple_b1 = [tuple_b[0], 0]
-        tuple_b = tuple_b1[0], tuple_b1[1]
-    z = []
-    for i in range(2):
-        z.append(tuple_a[i] + tuple_b[i])
-    return tuple(z)
+    if tuple_a is None or tuple_b is None:
+        return
+    first = tuple_a + ('0', '0')
+    second = tuple_b + ('0', '0')
+
+    sum1 = int(first[0]) + int(second[0])
+    sum2 = int(first[1]) + int(second[1])
+    return(sum1), (sum2)
