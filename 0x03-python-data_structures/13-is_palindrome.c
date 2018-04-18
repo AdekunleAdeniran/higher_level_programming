@@ -9,10 +9,14 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *temp = *head, *temp1 = *head, *temp2 = NULL;
+	listint_t *temp = *head;
+	listint_t *temp1 = *head;
+	listint_t *temp2 = NULL;
 
 	if (*head == NULL || head == NULL)
-		return (0);
+	{
+		return (1);
+	}
 
 	while (temp != NULL)
 	{
