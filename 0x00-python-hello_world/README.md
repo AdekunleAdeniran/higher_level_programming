@@ -91,6 +91,7 @@ The output of the program should be:
 * Whiteboard first
 * Prototype: int check_cycle(listint_t *list);
 * Return: 0 if there is no cycle, 1 if there is a cycle.
+
 ```Requirements:```
 Only these functions are allowed: write, printf, putchar, puts, malloc, free
 
