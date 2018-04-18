@@ -2,28 +2,23 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * *reverse_listint - function to reverse a singly linked list
+ * *is_pal - function to recursively check values of head and tail in a linked list
  * @head: double pointer of listint_t type to head of linked list
- * Return: link to the head of reversed link
+ * @tail: single pointer of listint_t type to tail of linked list
+ * Return: 1 if palidrome or 0 if not
  */
-listint_t *reverse_listint(listint_t **head)
+int is_pal(listint_t **head, listint_t *tail)
 {
-	listint_t *forward;
-	listint_t *back = NULL;
-
-	if (head == NULL || *head == NULL)
-		return (NULL);
-	forward = *head;
-	while (forward != NULL)
+	/* check if tail of list is NULL*/
+	if (tail == NULL)
+		return (1);
+	/* */
+	if (is_pal(head, tail->next) && (*head)->n == tail->n)
 	{
-		forward = forward->next;
-		forward = (*head)->next;
-		(*head)->next = back;
-		back = *head;
-		*head = forward;
+		*head = (*head)->next;
+		return (1);
 	}
-	*head = back;
-	return (*head);
+	return (0);
 }
 
 /**
@@ -33,36 +28,7 @@ listint_t *reverse_listint(listint_t **head)
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *temp = *head;
-	listint_t *temp1 = *head;
-	listint_t *temp2 = NULL;
-	int length = 0, count;
-
-	if (*head == NULL || head == NULL)
-	{
+	if (*head == NULL || (*head)->next == NULL)
 		return (1);
-	}
-
-	while (temp != NULL)
-	{
-		add_nodeint_end(&temp2, temp->n);
-		temp = temp->next;
-		length++;
-	}
-	reverse_listint(&temp2);
-	count = 0;
-	while (temp1 != NULL && count < (length / 2))
-	{
-		if (temp1->n == temp2->n)
-		{
-			temp1 = temp1->next;
-			temp2 = temp2->next;
-			continue;
-		}
-		else
-		{
-			return (0);
-		}
-	}
-	return (1);
+	return(is_pal(head, *head));
 }
