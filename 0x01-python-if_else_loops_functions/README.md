@@ -185,3 +185,7 @@ You can find the source code here
 
 * Prototype: listint_t *insert_node(listint_t **head, int number);
 * Return: the address of the new node, or NULL if it failed
+
+**AUTHOR**
+```Adekunle Adeniran
+Full Stack Software Engineer ```
