@@ -16,8 +16,8 @@ How to use command line arguments with your Python programs
 
 **0. Import a simple function from a simple file**
 
-     Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the 
-     addition 1 + 2 = 3
+     Write a program that imports the function def add(a, b): from the file add_0.py and prints the result 
+     of the addition 1 + 2 = 3
 
 * You have to use print function with string format to display integers
 * You have to assign:
@@ -27,23 +27,23 @@ How to use command line arguments with your Python programs
   * a and b must be define in 2 different lines: a = 1 and another b = 2
 * Your program should print: <a value> + <b value> = <add(a, b) value> followed with a new line
 * You can only use the word add_0 once in your code
-* You are not allowed to use * for importing or __import__
+* You are not allowed to use '*' for importing or __import__
 * Your code should not be executed when imported
 
-1. My first toolbox!
+**1. My first toolbox!**
 
-Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
+     Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
 
-Do not use the function print (with string format to display integers) more than 4 times
-You have to define:
-the value 10 to a variable a
-the value 5 to a variable b
-and use those two variables only, as arguments when calling functions (included print)
-a and b must be define in 2 different lines: a = 10 and another b = 5
-Your program should call each of the imported functions. See example bellow for format
-the word calculator_1 should be used only once in your file
-You are not allowed to use * for importing or __import__
-Your code should not be executed when imported
+* Do not use the function print (with string format to display integers) more than 4 times
+* You have to define:
+     * the value 10 to a variable a
+     * the value 5 to a variable b
+     * and use those two variables only, as arguments when calling functions (included print)
+     * a and b must be define in 2 different lines: a = 10 and another b = 5
+* Your program should call each of the imported functions. See example bellow for format
+     the word calculator_1 should be used only once in your file
+* You are not allowed to use * for importing or __import__
+* Your code should not be executed when imported
 
 2. How to make a script dynamic!
 
