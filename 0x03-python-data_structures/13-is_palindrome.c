@@ -12,7 +12,7 @@ int is_pal(listint_t **head, listint_t *tail)
 	/* check if tail of list is NULL*/
 	if (tail == NULL)
 		return (1);
-	/* */
+	/*Call function to recursively check head and tail of list */
 	if (is_pal(head, tail->next) && (*head)->n == tail->n)
 	{
 		*head = (*head)->next;
@@ -28,6 +28,7 @@ int is_pal(listint_t **head, listint_t *tail)
  */
 int is_palindrome(listint_t **head)
 {
+	/*check if head and next is NULL, null means Palindrome */
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
 	return(is_pal(head, *head));
