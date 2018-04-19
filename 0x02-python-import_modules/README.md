@@ -42,10 +42,10 @@ How to use command line arguments with your Python programs
      * a and b must be define in 2 different lines: a = 10 and another b = 5
 * Your program should call each of the imported functions. See example bellow for format
      the word calculator_1 should be used only once in your file
-* You are not allowed to use * for importing or __import__
+* You are not allowed to use * for importing or '__import__'
 * Your code should not be executed when imported
 
-2. How to make a script dynamic!
+**2. How to make a script dynamic!**
 
 Write a program that prints the number of and the list of its arguments.
 
