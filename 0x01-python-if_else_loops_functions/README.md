@@ -187,5 +187,6 @@ You can find the source code here
 * Return: the address of the new node, or NULL if it failed
 
 **AUTHOR**
-```Adekunle Adeniran
-Full Stack Software Engineer ```
+```
+Adekunle Adeniran
+Full Stack Software Engineer 
