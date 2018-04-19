@@ -28,6 +28,7 @@ How to use command line arguments with your Python programs
 * You can only use the word add_0 once in your code
 * You are not allowed to use '*' for importing or __import__
 * Your code should not be executed when imported
+* Your program should print: <a value> + <b value> = <add(a, b) value>' followed with a new line
 
 **1. My first toolbox!**
 
