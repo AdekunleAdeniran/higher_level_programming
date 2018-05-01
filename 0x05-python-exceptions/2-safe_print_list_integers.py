@@ -1,14 +1,11 @@
 #!/usr/bin/pytho3
 def safe_print_list_integers(my_list=[], x=0):
-    count = index_check = 0
-
-    while count < x:
+    count = 0
+    for items in range(x):
         try:
-            if type(my_list[count]) is int:
-                print("{:d}".format(my_list[count]), end="")
-                index_check += 1
+            print("{:d}".format(my_list[items]), end="")
             count += 1
-        except IndexError:
-            raise
+        except (TypeError, ValueError):
+            pass
     print()
-    return index_check
+    return count
