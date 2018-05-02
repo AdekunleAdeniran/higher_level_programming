@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''3-square.py: Defines Area that returns the current square area'''
+'''4-square.py: Defines Area that returns the current square area'''
 
 
 class Square:
