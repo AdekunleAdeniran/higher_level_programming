@@ -22,7 +22,7 @@
 * What is the Pythonic way to write getters and setters in Python
 * advanced:
 
-advanced:
+**advanced:**
 
 * How to dynamically create arbitrary new attributes for existing
   instances of a class
