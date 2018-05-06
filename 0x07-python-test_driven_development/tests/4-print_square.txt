@@ -1,0 +1,57 @@
+>>> print_square = __import__("4-print_square").print_square
+
+=======================================================================
+Traceback (most recent call last):
+TypeError: size must be an integer
+=======================================================================
+
+>>> print_square('x')
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square(None)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square([])
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square([[]])
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square([[6], [6], [6]])
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square((1,))
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square({})
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square({'a':1})
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+
+=======================================================================
+Traceback (most recent call last):
+ValueError: size must be >= 0
+=======================================================================
+
+>>> print_square(-1)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+
+=======================================================================
+Traceback (most recent call last):
+TypeError: size must be an integer
+=======================================================================
+
+>>> print_square(-1.11)
+Traceback (most recent call last):
+TypeError: size must be an integer
