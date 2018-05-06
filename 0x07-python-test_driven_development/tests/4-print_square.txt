@@ -5,6 +5,9 @@ Should print a square of size 2
 ##
 ##
 
+should do nothing
+>>> print_square(0)
+
 =======================================================================
 Traceback (most recent call last):
 TypeError: size must be an integer
