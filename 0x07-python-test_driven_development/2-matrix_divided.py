@@ -34,7 +34,7 @@ def matrix_divided(matrix, div):
     # Check if items in matrix are floats or ints
     for rows in matrix:
         for items in rows:
-            if not isinstance (items, (int, float)):
+            if not isinstance(items, (int, float)):
                 raise TypeError(listError)
 
     # Python Function to divide elements of a matrix
