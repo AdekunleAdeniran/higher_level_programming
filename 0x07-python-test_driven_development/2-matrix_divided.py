@@ -24,8 +24,9 @@ def matrix_divided(matrix, div):
             raise TypeError(listError)
 
     # Check if length of rows are the same
-    if len(matrix[0]) != len(matrix[1]):
-        raise TypeError('Each row of the matrix must have the same size')
+    for row in matrix:
+        if len(matrix[0]) != len(row):
+            raise TypeError('Each row of the matrix must have the same size')
 
     # Check to see if div is zero
     if div == 0:
