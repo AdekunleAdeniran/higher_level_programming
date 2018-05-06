@@ -1,5 +1,10 @@
 >>> print_square = __import__("4-print_square").print_square
 
+Should print a square of size 2
+>>> print_square(2)
+##
+##
+
 =======================================================================
 Traceback (most recent call last):
 TypeError: size must be an integer
@@ -32,6 +37,11 @@ TypeError: size must be an integer
 >>> print_square({})
 Traceback (most recent call last):
 TypeError: size must be an integer
+
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() expects 1 argument, none given
 
 >>> print_square({'a':1})
 Traceback (most recent call last):
