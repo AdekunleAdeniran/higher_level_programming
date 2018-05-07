@@ -45,13 +45,23 @@ class TestMaxInteger(unittest.TestCase):
         '''
         Test to check if only one entry
         '''
-        self.assertTrue(max_integer([10]))
+        self.assertEqual(max_integer([10]), 10)
 
     def test_negative_integer(self):
         '''
         Test only negative integers
         '''
         self.assertEqual(max_integer([-1, -2, -5]), -1)
+    def test_no_argument(self):
+        '''
+        Test that None is returned if no argument
+        '''
+        self.assertEqual(max_integer(), None)
+    def test_empty_list(self):
+        '''
+        Test if list is empty
+        '''
+        self.assertEqual(max_integer([]), None)
 
     if __name__ == '__main__':
         unittest.main()
