@@ -47,7 +47,7 @@ TypeError: size must be an integer
 >>> print_square()
 Traceback (most recent call last):
 ...
-TypeError: print_square() expects 1 argument, none given
+TypeError: print_square() missing 1 required positional argument: 'size'
 
 >>> print_square({'a':1})
 Traceback (most recent call last):
@@ -61,6 +61,12 @@ ValueError: size must be >= 0
 
 >>> print_square(-1)
 Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+>>> print_square(-1.3)
+Traceback (most recent call last):
+...
 ValueError: size must be >= 0
 
 =======================================================================
@@ -70,4 +76,5 @@ TypeError: size must be an integer
 
 >>> print_square(-1.11)
 Traceback (most recent call last):
+...
 TypeError: size must be an integer
