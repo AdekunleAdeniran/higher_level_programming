@@ -5,7 +5,13 @@ Should print a square of size 2
 ##
 ##
 
-should do nothing
+'size' should be an integer:
+>>> print_square([4, 2])
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+should do nothing if size is 0:
 >>> print_square(0)
 
 =======================================================================
