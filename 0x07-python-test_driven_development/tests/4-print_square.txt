@@ -1,18 +1,15 @@
 >>> print_square = __import__("4-print_square").print_square
 
-Should print a square of size 2
+Should print a square if size is integer
 >>> print_square(2)
-##
-##
+    ##
+    ##
 
-'size' should be an integer:
->>> print_square([4, 2])
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
-
-should do nothing if size is 0:
 >>> print_square(0)
+
+>>> print_square(True)
+    #
+>>> print_square(False)
 
 =======================================================================
 Traceback (most recent call last):
