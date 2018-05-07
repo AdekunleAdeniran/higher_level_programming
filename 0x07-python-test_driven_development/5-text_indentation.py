@@ -11,14 +11,10 @@ def text_indentation(text):
     '''Python function to add two new lines to string at character points'''
     if not isinstance(text, str):
         raise TypeError('text must be a string')
-
-    dxt = ['?', '.', ':']
-    new = ""
-    for items in text:
-        new += items
-        if items in dxt:
-            new += '\n'
-            print(new.strip(" "))
-            new = ""
-    if items not in dxt:
-        print(new.strip(" "))
+    period = text.replace('.', '.\n\n')
+    period = period.replace('?', '?\n\n')
+    period = period.replace(':', ':\n\n')
+    period1 = period.split('\n')
+    for line in range(len(period1)):
+        print("{}".format(period1[line].strip()),
+              end=("" if (line == (len(period1) - 1)) else '\n'))
