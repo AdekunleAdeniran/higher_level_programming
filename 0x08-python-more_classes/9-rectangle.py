@@ -40,7 +40,7 @@ class Rectangle:
 
     def perimeter(self):
         if self.width == 0 or self.height == 0:
-            perimeter = 0
+            return 0
         else:
             return (2 * (self.height + self.width))
 
@@ -72,7 +72,7 @@ class Rectangle:
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
-        print("Bye rectangle…")
+        print("Bye rectangle...")
 
     @classmethod
     def square(cls, size=0):
