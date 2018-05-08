@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
-'''
-1-rectangle: Python Funtion that defines Rectangle type'''
+'''3-rectangle: Python Funtion that defines Rectangle type'''
 
 
 class Rectangle:

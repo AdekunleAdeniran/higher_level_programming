@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 
-'''4-rectangle: Python Funtion that defines Rectangle type'''
+'''7-rectangle: Python Funtion that defines Rectangle type'''
 
 
 class Rectangle:
     '''Defines the Rectangle type'''
+    number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
@@ -16,8 +19,8 @@ class Rectangle:
         else:
             for h in range(self.__height):
                 for w in range(self.height - 1):
-                    print('#' * self.__width)
-                return '#' * self.width
+                    print(str(self.print_symbol) * self.__width)
+                return str(self.print_symbol) * self.width
 
     def __repr__(self):
         return("Rectangle({}, {})".format(self.width, self.height))
@@ -56,3 +59,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    def __del__(self):
+        Rectangle.number_of_instances -= 1
+        print("Bye rectangle…")
