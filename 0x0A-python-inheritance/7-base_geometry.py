@@ -7,6 +7,9 @@ class BaseGeometry:
     class BaseGeometry
     '''
 
+    def __init__(self):
+        pass
+
     def area(self):
         '''
         raise an exception
@@ -17,7 +20,7 @@ class BaseGeometry:
         '''
         check value input is correct type
         '''
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
             raise ValueError("{} must be greater than 0".format(name))

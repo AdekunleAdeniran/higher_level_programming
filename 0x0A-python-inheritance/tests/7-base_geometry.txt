@@ -15,6 +15,18 @@ ValueError: kunle must be greater than 0
 >>> bg.integer_validator("my_int", 12)
 >>> bg.integer_validator("width", 89)
 
+>>> ar = BaseGeometry()
+>>> ar.area()
+Traceback (most recent call last)
+...
+Exception: area() is not implemented
+
+>>> ar = BaseGeometry()
+>>> ar.area(2)
+Traceback (most recent call last)
+...
+TypeError: area() takes exactly 1 argument (2 given)
+
 >>> integer_validator = __import__('7-base_geometry').BaseGeometry.integer_validator
 >>> type(integer_validator)
 <type 'instancemethod'>
