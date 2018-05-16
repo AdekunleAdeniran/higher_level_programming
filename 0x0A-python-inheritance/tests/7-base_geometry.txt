@@ -1,0 +1,31 @@
+7-base_geometry test module
+===========================
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> bg = BaseGeometry()
+>>> isinstance(bg, BaseGeometry)
+True
+
+>>> bg.integer_validator("kunle", -5)
+Traceback (most recent call last):
+...
+ValueError: kunle must be greater than 0
+
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("width", 89)
+
+>>> integer_validator = __import__('7-base_geometry').BaseGeometry.integer_validator
+>>> type(integer_validator)
+<type 'instancemethod'>
+
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> try:
+...     bg.integer_validator("age", 0)
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[ValueError] age must be greater than 0
