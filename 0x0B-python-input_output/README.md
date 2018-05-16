@@ -160,7 +160,7 @@ You don’t need to manage exceptions if the object can’t be serialized
   * Otherwise, all attributes must be retrieved
 * You are not allowed to import any module
 
-13. Student to disk and reload
+**13. Student to disk and reload**
 
     Write a class Student that defines a student by: (based on 12-student.py)
 
