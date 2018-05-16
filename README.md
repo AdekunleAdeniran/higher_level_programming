@@ -11,4 +11,5 @@ Python interpreters are available for many operating systems. CPython, the refer
 **Topic Covered**
 
 **AUTHOR**
-`Adekunle Adeniran
+
+`Adekunle Adeniran`
