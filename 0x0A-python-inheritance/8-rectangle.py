@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''7-base_geometry.py'''
+'''8-base_geometry.py'''
 
 
 class BaseGeometry:
@@ -21,3 +21,16 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+
+
+class Rectangle(BaseGeometry):
+    '''class Rectangle inherits from BaseGeometry'''
+
+    def __init__(self, width, height):
+        '''private instantiation of attributes
+           validate type with integer_validator
+        '''
+        super().integer_validator('width', width)
+        self.__width = width
+        super().integer_validator('height', height)
+        self.__height = height
