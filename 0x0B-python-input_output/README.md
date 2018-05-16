@@ -72,10 +72,11 @@
 * You are not allowed to import any module
 
 **5. To JSON string**
-Write a function that returns the JSON representation of an object (string):
 
-Prototype: def to_json_string(my_obj):
-You don’t need to manage exceptions if the object can’t be serialized
+     Write a function that returns the JSON representation of an object (string):
+
+* Prototype: def to_json_string(my_obj):
+* You don’t need to manage exceptions if the object can’t be serialized
 
 **6. From JSON string to Object**
 
@@ -106,7 +107,7 @@ You don’t need to manage exceptions if the object can’t be serialized
   an object.
 * You don’t need to manage file permissions / exceptions.
 
-9. Load, add, save
+**9. Load, add, save**
 
    Write a script that adds all arguments to a Python list, and then save
    them to a file:
@@ -117,7 +118,7 @@ You don’t need to manage exceptions if the object can’t be serialized
 * If the file doesn’t exist, it should be created
 * You don’t need to manage file permissions / exceptions.
 
-10. Class to JSON
+**10. Class to JSON**
 
     Write a function that returns the dictionary description with simple data
     structure (list, dictionary, string, integer and boolean) for JSON
