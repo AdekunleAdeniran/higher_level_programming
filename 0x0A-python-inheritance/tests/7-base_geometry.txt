@@ -1,31 +1,64 @@
 7-base_geometry test module
 ===========================
 
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> base = __import__('7-base_geometry').BaseGeometry
 
->>> bg = BaseGeometry()
->>> isinstance(bg, BaseGeometry)
-True
+>>> Base = base()
 
->>> bg.integer_validator("kunle", -5)
+>>> Base.integer_validator("age", "5")
 Traceback (most recent call last):
-...
-ValueError: kunle must be greater than 0
+TypeError: age must be an integer
 
->>> bg.integer_validator("my_int", 12)
->>> bg.integer_validator("width", 89)
+>>> Base.integer_validator("age", 4)
 
->>> integer_validator = __import__('7-base_geometry').BaseGeometry.integer_validator
->>> type(integer_validator)
-<class 'function'>
-
->>> bg.integer_validator("name", "John")
+>>> Base.integer_validator("age", True)
 Traceback (most recent call last):
-...
-TypeError: name must be an integer
+TypeError: age must be an integer
 
->>> try:
-...     bg.integer_validator("age", 0)
-... except Exception as e:
-...     print("[{}] {}".format(e.__class__.__name__, e))
-[ValueError] age must be greater than 0
+>>> Base.integer_validator("age", 0)
+Traceback (most recent call last):
+ValueError: age must be greater than 0
+
+>>> Base.integer_validator("age", (1,2))
+Traceback (most recent call last):
+TypeError: age must be an integer
+
+>>> Base.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
+
+>>> Base.area(1)
+Traceback (most recent call last):
+TypeError: area() takes 1 positional argument but 2 were given
+
+>>> Base.integer_validator("age", -8)
+Traceback (most recent call last):
+ValueError: age must be greater than 0
+
+>>> Base.integer_validator("age", 75.50)
+Traceback (most recent call last):
+TypeError: age must be an integer
+
+>>> Base.integer_validator("age", [1,2])
+Traceback (most recent call last):
+TypeError: age must be an integer
+
+>>> Base.integer_validator("age", {'1': "str"})
+Traceback (most recent call last):
+TypeError: age must be an integer
+
+>>> Base.integer_validator("age", {1, 2})
+Traceback (most recent call last):
+TypeError: age must be an integer
+
+>>> Base.integer_validator("age", None)
+Traceback (most recent call last):
+TypeError: age must be an integer
+
+>>> Base.integer_validator()
+Traceback (most recent call last):
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> Base.integer_validator("age", 55, 4)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
