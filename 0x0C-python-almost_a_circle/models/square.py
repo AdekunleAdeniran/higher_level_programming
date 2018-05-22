@@ -34,22 +34,21 @@ class Square(Rectangle):
                 self.y = args[3]
         else:
             for key, values in kwargs.items():
-                if hasattr(self, key) is True:
-                    setattr(self, key, values)
+                setattr(self, key, values)
 
     @property
     def size(self):
         """set the property of width"""
-        return self.width
+        return self.height
 
     @size.setter
     def size(self, value):
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError('width must be an integer')
         if value <= 0:
             raise ValueError('width must be > 0')
         else:
-            self.width = value
+            self.height = value
 
     def to_dictionary(self):
         '''Method to return dictionary representation of square'''

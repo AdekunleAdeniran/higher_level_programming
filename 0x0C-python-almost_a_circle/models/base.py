@@ -23,6 +23,7 @@ class Base:
             return []
         else:
             return json.dumps(list_dictionaries)
+
     @classmethod
     def save_to_file(cls, list_objs):
         '''Method that writes JSON string representation to file'''
@@ -39,3 +40,24 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        '''class method that prints instances'''
+        temp = cls(1, 1)
+        temp.update(**dictionary)
+        return temp
+
+    @classmethod
+    def load_from_file(cls):
+        '''Class Method that returns a list of instances'''
+        new_list = []
+        try:
+            with open("{}.json".format(cls.__name__), 'r') as f:
+                new = cls.from_json_string(f.read())
+        except IOError:
+            return []
+
+        for i in new:
+            new_list.append(cls.create(**i))
+        return new_list
