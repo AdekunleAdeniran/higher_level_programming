@@ -29,8 +29,9 @@ class Base:
     def save_to_file(cls, list_objs):
         '''Method that writes JSON string representation to file'''
         new = []
-        for i in list_objs:
-            new.append(cls.to_dictionary(i))
+        if list_objs:
+            for i in list_objs:
+                new.append(cls.to_dictionary(i))
         with open("{}.json".format(cls.__name__), 'w') as f:
             f.write(cls.to_json_string(new))
 
