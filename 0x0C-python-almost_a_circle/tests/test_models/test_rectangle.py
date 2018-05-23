@@ -229,44 +229,6 @@ class TestRectangle(unittest.TestCase):
             sys.stdout.seek(0)
             sys.stdout.truncate(0)
 
-    def test_9_update(self):
-        """
-        Test update method with *args
-        """
-        Base._Base__nb_objects = 0
-        R1 = Rectangle(10, 10, 10, 10)
-        self.assertEqual(R1.__str__(), "[Rectangle] (1) 10/10 - 10/10")
-        R1.update(*[8])
-        self.assertEqual(R1.__str__(), "[Rectangle] (8) 10/10 - 10/10")
-        R1.update(*[8, 7])
-        self.assertEqual(R1.__str__(), "[Rectangle] (8) 10/10 - 7/10")
-        R1.update(*[8, 7, 6])
-        self.assertEqual(R1.__str__(), "[Rectangle] (8) 10/10 - 7/6")
-        R1.update(*[8, 7, 6, 5])
-        self.assertEqual(R1.__str__(), "[Rectangle] (8) 5/10 - 7/6")
-        R1.update(*[8, 7, 6, 5, 4])
-        self.assertEqual(R1.__str__(), "[Rectangle] (8) 5/4 - 7/6")
-        with self.assertRaises(TypeError):
-            R1.update(*[1, 1.0, 1, 1, 1])
-        with self.assertRaises(TypeError):
-            R1.update(*[1, "a"])
-        with self.assertRaises(TypeError):
-            R1.update(*[1, 1, 1.0])
-        with self.assertRaises(TypeError):
-            R1.update(*[1, 1, "a"])
-        with self.assertRaises(TypeError):
-            R1.update(*[1, 1, 1, [], 0])
-        with self.assertRaises(TypeError):
-            R1.update(*[1, 1, 1, 0, []])
-        with self.assertRaises(ValueError):
-            R1.update(*[1, 0])
-        with self.assertRaises(ValueError):
-            R1.update(*[1, 1, 0])
-        with self.assertRaises(ValueError):
-            R1.update(*[1, 1, 1, -1, 1])
-        with self.assertRaises(ValueError):
-            R1.update(*[1, 1, 1, 1, -1])
-
     def test_10_update2(self):
         """
         Test update() with **kwargs
@@ -329,46 +291,3 @@ class TestRectangle(unittest.TestCase):
                                         '"width": 2, '
                                         '"height": 4}]'))
         os.remove("Rectangle.json")
-
-    def test_13_save_file_none(self):
-        """
-        Test save_to_file() method of Rectangle with None
-        """
-        Base._Base__nb_objects = 0
-        R1 = Rectangle(10, 7, 2, 8)
-        R2 = Rectangle(2, 4)
-        Rectangle.save_to_file(None)
-        self.assertTrue(os.path.exists("Rectangle.json"), True)
-        with open("Rectangle.json", mode='r') as myFile:
-            self.assertEqual(json.loads(myFile.read()),
-                             json.loads('[]'))
-        os.remove("Rectangle.json")
-
-    def test_14_save_file_empty(self):
-        """
-        Test to_dictionary() method produces valid dictionary
-        of Rectangle.
-        """
-        Base._Base__nb_objects = 0
-        R1 = Rectangle(10, 7, 2, 8)
-        R2 = Rectangle(2, 4)
-        Rectangle.save_to_file([])
-        self.assertIs(os.path.exists("Rectangle.json"), True)
-        with open("Rectangle.json", mode='r') as myFile:
-            self.assertEqual(json.loads(myFile.read()),
-                             json.loads('[]'))
-        os.remove("Rectangle.json")
-
-    def test_15_load_file(self):
-        """
-        Test load from file if file non-existent
-        """
-        self.assertEqual(Rectangle.load_from_file(), [])
-        Base._Base__nb_objects = 0
-        R1 = Rectangle(1, 1)
-        R2 = Rectangle(2, 2)
-        Rectangle.save_to_file([R1, R2])
-        Base._Base__nb_objects = 0
-        RL = Rectangle.load_from_file()
-        self.assertEqual(RL[0].to_dictionary(), R1.to_dictionary())
-        self.assertEqual(RL[1].to_dictionary(), R2.to_dictionary())

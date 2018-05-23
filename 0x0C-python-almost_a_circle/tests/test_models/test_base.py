@@ -130,23 +130,6 @@ class TestBase(unittest.TestCase):
         self.assertEqual(type(d1), dict)
         self.assertEqual(type(jd), str)
 
-    def test_5_to_json_string(self):
-        """
-        Test to check for string to
-        json conversion
-        """
-        Base.__nb_objects = 0
-        self.assertEqual(Base.to_json_string(None), "[]")
-        self.assertTrue(type(Base.to_json_string(None)) is str)
-        self.assertEqual(Base.to_json_string([]), "[]")
-        self.assertTrue(type(Base.to_json_string("[]")) is str)
-        dt1 = {"id": 7, "width": 10, "height": 22, "x": 4, "y": 5}
-        dt2 = {"id": 8, "width": 4, "height": 2, "x": 14, "y": 3}
-        conv = Base.to_json_string([dt1, dt2])
-        self.assertTrue(type(conv) is str)
-        d = json.loads(conv)
-        self.assertEqual(d, [dt1, dt2])
-
     def test_6_from_json_string(self):
         """
         Test to check from json to string
@@ -165,20 +148,6 @@ class TestBase(unittest.TestCase):
         """
         self.assertEqual(Base.from_json_string(""), [])
         self.assertEqual(Base.from_json_string(None), [])
-
-    def test_8_jfile_empty(self):
-        """Test to check from empty"""
-        Rectangle.save_to_file([])
-        with open("Rectangle.json", mode="r") as myFile:
-            self.assertEqual([], json.load(myFile))
-
-    def test_9_jfile_None(self):
-        """
-        Test to check from none empty
-        """
-        Rectangle.save_to_file(None)
-        with open("Rectangle.json", mode="r") as myFile:
-            self.assertEqual([], json.load(myFile))
 
     def test_10_rect(self):
         """
@@ -219,24 +188,3 @@ class TestBase(unittest.TestCase):
         Square.save_to_file(lS)
         lS2 = Square.load_from_file()
         self.assertNotEqual(lS, lS2)
-
-    def test_14_csv_file(self):
-        """
-        Test to check for csv file
-        """
-        R1 = Rectangle(12, 13, 14, 15)
-        R2 = Rectangle(3, 5)
-        lR = [R1, R2]
-        Rectangle.save_to_file_csv(lR)
-        lR2 = Rectangle.load_from_file_csv()
-        self.assertTrue(lR[0].__str__() == lR2[0].__str__())
-        self.assertTrue(lR[1].__str__() == lR2[1].__str__())
-
-    def test_15_csv_save_file(self):
-        """
-        Test to check for csv file with None and empty
-        """
-        Rectangle.save_to_file_csv(None)
-        self.assertEqual(Rectangle.load_from_file_csv(), [])
-        os.remove("Rectangle.csv")
-        self.assertEqual(Rectangle.load_from_file_csv(), [])
