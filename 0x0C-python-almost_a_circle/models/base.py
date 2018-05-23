@@ -5,6 +5,7 @@ import json
 
 
 class Base:
+    '''Base Class with private attributes'''
 
     __nb_objects = 0
 
