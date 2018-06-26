@@ -88,21 +88,24 @@ After entering the root MySQL password into the prompt (not to be confused with 
 
 **5. Full description**
 
-	Write a script that prints the full description of the table first_table from the database hbtn_0c_0 in your MySQL server.
+	Write a script that prints the full description of the table first_table from the
+	database hbtn_0c_0 in your MySQL server.
 
 * The database name will be passed as an argument of the mysql command
 * You are not allowed to use the DESCRIBE or EXPLAIN statements
 
 **6. List all in table**
 
-	Write a script that lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server.
+	Write a script that lists all rows of the table first_table from the database
+	hbtn_0c_0 in your MySQL server.
 
 * All fields should be printed
 * The database name will be passed as an argument of the mysql command
 
 **7. First add mandatory**
 
-	Write a script that inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server.
+	Write a script that inserts a new row in the table first_table (database hbtn_0c_0)
+	in your MySQL server.
 
 * New row:
 	* id = 89
@@ -111,13 +114,15 @@ After entering the root MySQL password into the prompt (not to be confused with 
 
 **8. Count 89**
 
-	Write a script that displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server.
+	Write a script that displays the number of records with id = 89 in the table
+	first_table of the database hbtn_0c_0 in your MySQL server.
 
 * The database name will be passed as an argument of the mysql command
 
 **9. Full creation**
 
-	Write a script that creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.
+	Write a script that creates a table second_table in the database hbtn_0c_0 in your
+	MySQL server and add multiples rows.
 
 * second_table description:
 	* id INT
@@ -134,15 +139,17 @@ After entering the root MySQL password into the prompt (not to be confused with 
 
 **10. List by best**
 
-	Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
+	Write a script that lists all records of the table second_table of the database
+	hbtn_0c_0 in your MySQL server.
 
-Results should display both the score and the name (in this order)
-Records should be ordered by score (top first)
-The database name will be passed as an argument of the mysql command
+* Results should display both the score and the name (in this order)
+* Records should be ordered by score (top first)
+* The database name will be passed as an argument of the mysql command
 
 **11. Select the best**
 
-	Write a script that lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server.
+	Write a script that lists all records with a score >= 10 in the table second_table
+	of the database hbtn_0c_0 in your MySQL server.
 
 * Results should display both the score and the name (in this order)
 * Records should be ordered by score (top first)
@@ -157,20 +164,23 @@ The database name will be passed as an argument of the mysql command
 
 **13. Score too low**
 
-	Write a script that removes all records with a score <= 5 in the table second_table of the database hbtn_0c_0 in your MySQL server.
+	Write a script that removes all records with a score <= 5 in the table second_table
+	of the database hbtn_0c_0 in your MySQL server.
 
 * The database name will be passed as an argument of the mysql command
 
 **14. Average**
 
-	Write a script that computes the score average of all records in the table second_table of the database hbtn_0c_0 in your MySQL server.
+	Write a script that computes the score average of all records in the table
+	second_table of the database hbtn_0c_0 in your MySQL server.
 
 * The result column name should be average
-*  The database name will be passed as an argument of the mysql command
+* The database name will be passed as an argument of the mysql command
 
 **15. Number by score**
 
-	Write a script that lists the number of records with the same score in the table second_table of the database hbtn_0c_0 in your MySQL server.
+	Write a script that lists the number of records with the same score in the table
+	second_table of the database hbtn_0c_0 in your MySQL server.
 
 * The result should display:
 	* the score
@@ -180,7 +190,8 @@ The database name will be passed as an argument of the mysql command
 
 **16. Say my name**
 
-	Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
+	Write a script that lists all records of the table second_table of the database
+	hbtn_0c_0 in your MySQL server.
 
 * Don’t list rows without a name value
 * Results should display the score and the name (in this order)
