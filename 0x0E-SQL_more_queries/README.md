@@ -40,6 +40,8 @@ After entering the root MySQL password into the prompt (not to be confused with 
 * What are subqueries
 * What are JOIN and UNION
 
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/b3804b751f134180015b4e6583080246.png)
+
 **Exercises**
 
 **0. My privileges!**
