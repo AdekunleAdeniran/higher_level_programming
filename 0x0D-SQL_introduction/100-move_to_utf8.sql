@@ -1,4 +1,6 @@
 -- MySql to convert database to UTF8
+USE hbtn_0c_0;
+
 ALTER DATABASE
       hbtn_0c_0
       CHARACTER SET = utf8mb4
