@@ -13,7 +13,7 @@ if __name__ == "__main__":
                          passwd=argv[2], db=argv[3], charset="utf8")
     c = db.cursor()
     c.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY\
-    id ASC",(argv[4],))
+    id ASC", (argv[4],))
     for rows in c.fetchall():
         print(rows)
 
