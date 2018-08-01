@@ -6,11 +6,11 @@ def find_peak(list_of_integers):
         return
     m = le // 2
     pivot = list_of_integers[m]
-    right = list_of_integers[m + 1]
     left = list_of_integers[m - 1]
 
-    if pivot >= left and pivot >= right:
+    if (m == le - 1 or pivot >= list_of_integers[m + 1]) and\
+            (m == 0 or pivot >= left):
         return pivot
-    if right >= pivot:
-        return (find_peak(list_of_integers[m:]))
+    elif m != le - 1 and list_of_integers[m + 1] > pivot:
+        return (find_peak(list_of_integers[m + 1:]))
     return (find_peak(list_of_integers[:m]))
