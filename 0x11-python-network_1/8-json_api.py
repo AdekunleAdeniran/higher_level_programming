@@ -17,4 +17,4 @@ if __name__ == "__main__":
         else:
             print('[{}] {}'.format(r_id, r_name))
     except BaseException:
-        print('Not a valid json')
+        print('Not a valid JSON')
