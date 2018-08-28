@@ -33,6 +33,6 @@
 
 Install semi-standard
 
-[Documentation](https://github.com/Flet/semistandard)
+<a href="https://github.com/Flet/semistandard" target="_blank">Documentation</a>
 
 ` sudo npm install semistandard --global`
