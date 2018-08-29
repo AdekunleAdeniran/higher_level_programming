@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// JS to find the second largest number
+// JS to change value of an object
 'use strict';
 const myObject = {
   type: 'object',
