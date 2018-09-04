@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// JS script to define a class, creates an instance method to print rectangle
+// JS script to define a class, extends to another class
 class Rectangle {
   constructor (w, h) {
     if (w <= 0 || h <= 0 || w === undefined || h === undefined) {
