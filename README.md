@@ -58,5 +58,6 @@ and more
 21. [0x14-javascript-web_scraping](./0x14-javascript-web_scraping)
 
 ## Credits
-Work is owned and maintained by Adekunle Adeniran `[@flourishcodes](https://twitter.com/flourishcodes)`.
+Work is owned and maintained by Adekunle Adeniran [@flourishcodes](https://twitter.com/flourishcodes)
+
 Collaborators are acknowledged within each project
