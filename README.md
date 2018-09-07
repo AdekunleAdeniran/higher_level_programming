@@ -28,7 +28,6 @@ At Holberton School, there are several tracks to become a full stack software en
 - Objects
 and more
 
-[Table of Contents](#tableofcontents)
 
 ## Requirements
 * Ubuntu 14.04 LTS
