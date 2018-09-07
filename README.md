@@ -28,11 +28,7 @@ At Holberton School, there are several tracks to become a full stack software en
 - Objects
 and more
 
-<br/>
-<div align="right">
-    <b><a href="#table of contents">↥ back to top</a></b>
-    </div>
-<br/>
+[back to top](#table of contents)
 
 ## Requirements
 * Ubuntu 14.04 LTS
