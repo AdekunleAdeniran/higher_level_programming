@@ -34,6 +34,7 @@ and more
 * Ubuntu 14.04 LTS
 * Pep8 version 1.7
 
+<a href="#table-of-contents">Back to table of contents</a>
 
 ## Projects
 
@@ -60,7 +61,11 @@ and more
 21. [0x14-javascript-web_scraping](./0x14-javascript-web_scraping)
 22. [0x15-javascript-web_jquery](./0x15-javascript-web_jquery)
 
+<a href="#table-of-contents">Back to table of contents</a>
+
 ## Credits
 Work is owned and maintained by Adekunle Adeniran [@flourishcodes](https://twitter.com/flourishcodes)
 
 Collaborators are acknowledged within each project
+
+<a href="#table-of-contents">Back to table of contents</a>
