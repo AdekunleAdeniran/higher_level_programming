@@ -1,5 +1,7 @@
 ## 0x15. Javascript - Web JQuery
 
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/305/4724718.jpg)
+
 **What you should learn from this project**
 
        At the end of this project you are expected to be able to explain to
@@ -24,6 +26,7 @@
 	     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     	 </head>
 
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/305/1f1ihd.jpg)
 
 **0. No jQuery**
 
