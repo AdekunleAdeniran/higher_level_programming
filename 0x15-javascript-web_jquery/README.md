@@ -41,7 +41,7 @@
      Write a Javascript script that updates the text color of the HTML tag
      HEADER to red (#FF0000):
 
-* You can’t use document.querySelector to select the HTML tag
+* You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API
 
 **2. Click and turn red**
@@ -49,7 +49,7 @@
      Write a Javascript script that updates the text color of the HTML tag
      HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
 
-* You can’t use document.querySelector to select the HTML tag
+* You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API
 
 **3. Add `.red` class**
@@ -57,7 +57,7 @@
      Write a Javascript script that adds the class red to the HTML tag
      HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
 
-* You can’t use document.querySelector to select the HTML tag
+* You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API
 
 **4. Toggle classes**
@@ -69,7 +69,7 @@
   same time, never empty.
 * If the current class is red, when the user click on DIV#toggle_header, the
   class must be updated to green ; and the reverse.
-* You can’t use document.querySelector to select the HTML tag
+* You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API
 
 **5. List of elements**
@@ -79,7 +79,7 @@
 
 * The new element must be: <li>Item</li>
 * The new element must be added to UL.my_list
-* You can’t use document.querySelector to select the HTML tag
+* You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API
 
 **6. Change the text**
@@ -87,7 +87,7 @@
      Write a Javascript script that updates the text of the HTML tag
      HEADER to “New Header!!!” when the user clicks on DIV#update_header
 
-* You can’t use document.querySelector to select the HTML tag
+* You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API
 
 **7. Star wars character**
@@ -96,7 +96,7 @@
      URL: https://swapi.co/api/people/5/?format=json
 
 * The name must be displayed in the HTML tag DIV#character
-* You can’t use document.querySelector to select the HTML tag
+* You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API
 
 **8. Star Wars movies**
@@ -105,7 +105,7 @@
      this URL: https://swapi.co/api/films/?format=json
 
 * All movie titles must be list in the HTML tag UL#list_movies
-* You can’t use document.querySelector to select the HTML tag
+* You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API
 
 **9. Wind speed**
@@ -114,5 +114,5 @@
      speed by using this URL: https://query.yahooapis.com/v1/public/yql?q=select%20wind%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22San%20Francisco%2C%20CA%22)&format=json
 
 * The wind speed must be display in the HTML tag DIV#sf_wind_speed
-* You can’t use document.querySelector to select the HTML tag
+* You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API You script must be work when it imported from the HEAD tag
