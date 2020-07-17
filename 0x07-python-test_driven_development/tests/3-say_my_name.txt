@@ -21,42 +21,42 @@ TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("Holberton", "School")
-My name is Holberton School
+>>> say_my_name("notrebloh", "School")
+My name is notrebloh School
 
->>> say_my_name(None, "Holberton")
+>>> say_my_name(None, "notrebloh")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name([], "Holberton")
+>>> say_my_name([], "notrebloh")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name({}, "Holberton")
+>>> say_my_name({}, "notrebloh")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name((1,), "Holberton")
+>>> say_my_name((1,), "notrebloh")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name(None, "Holberton")
+>>> say_my_name(None, "notrebloh")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name([[], [], []], "Holberton")
+>>> say_my_name([[], [], []], "notrebloh")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name([[6, 6, 6], [6, 6, 6], [6, 6, 6]], "Holberton")
+>>> say_my_name([[6, 6, 6], [6, 6, 6], [6, 6, 6]], "notrebloh")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name([[6], [6, 6], [6, 6, 6]], "Holberton")
+>>> say_my_name([[6], [6, 6], [6, 6, 6]], "notrebloh")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name([[6], [6, 6], [6]], "Holberton")
+>>> say_my_name([[6], [6, 6], [6]], "notrebloh")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
@@ -68,42 +68,42 @@ TypeError: last_name must be a string
 =======================================================================
 
 
->>> say_my_name("Holberton", 1)
+>>> say_my_name("notrebloh", 1)
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Holberton", (1))
+>>> say_my_name("notrebloh", (1))
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Holberton", None)
+>>> say_my_name("notrebloh", None)
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Holberton", [])
+>>> say_my_name("notrebloh", [])
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Holberton", {})
+>>> say_my_name("notrebloh", {})
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Holberton", (1,))
+>>> say_my_name("notrebloh", (1,))
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Holberton", [[], [], []])
+>>> say_my_name("notrebloh", [[], [], []])
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Holberton", [[6, 6, 6], [6, 6, 6], [6, 6, 6]])
+>>> say_my_name("notrebloh", [[6, 6, 6], [6, 6, 6], [6, 6, 6]])
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Holberton", [[6], [6, 6], [6, 6, 6]])
+>>> say_my_name("notrebloh", [[6], [6, 6], [6, 6, 6]])
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Holberton", [[6], [6, 6], [6]])
+>>> say_my_name("notrebloh", [[6], [6, 6], [6]])
 Traceback (most recent call last):
 TypeError: last_name must be a string

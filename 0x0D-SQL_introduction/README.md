@@ -1,6 +1,6 @@
 ## 0x0D. SQL - Introduction
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/rtcwz.jpg)
+![](https://s3.amazonaws.com/intranet-projects-files/notreblohschool-higher-level_programming+/272/rtcwz.jpg)
 
 **About MySQL**
 
@@ -109,7 +109,7 @@ After entering the root MySQL password into the prompt (not to be confused with 
 
 * New row:
 	* id = 89
-	* name = Holberton School
+	* name = notrebloh School
 * The database name will be passed as an argument of the mysql command
 
 **8. Count 89**

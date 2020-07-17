@@ -1,6 +1,6 @@
 ## 0x0E. SQL - More queries
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/66988091.jpg)
+![](https://s3.amazonaws.com/intranet-projects-files/notreblohschool-higher-level_programming+/274/66988091.jpg)
 
 **About MySQL**
 
@@ -40,7 +40,7 @@ After entering the root MySQL password into the prompt (not to be confused with 
 * What are subqueries
 * What are JOIN and UNION
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/b3804b751f134180015b4e6583080246.png)
+![](https://s3.amazonaws.com/intranet-projects-files/notreblohschool-higher-level_programming+/274/b3804b751f134180015b4e6583080246.png)
 
 **Exercises**
 

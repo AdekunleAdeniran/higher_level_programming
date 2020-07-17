@@ -11,7 +11,7 @@ Why Python programming is awesome (don’t forget to tweet today, with the hasht
 * How to print text and variables using print
 * How to use strings
 * What are indexing and slicing in Python
-* What is the official Holberton Python coding style and how to check your code with PEP 8
+* What is the official notrebloh Python coding style and how to check your code with PEP 8
 
 **1. Run inline**
 
@@ -56,7 +56,7 @@ The output of the program should be:
 
 **6. Play with strings**
 
-    Complete this source code to print Welcome to Holberton School!
+    Complete this source code to print Welcome to notrebloh School!
 * You are not allowed to use any loops or conditional statements.
 * You have to use the variables str1 and str2 in your new line of code
 * Your program should be exactly 5 lines long

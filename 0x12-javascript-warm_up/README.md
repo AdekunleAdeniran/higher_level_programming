@@ -1,6 +1,6 @@
 ## 0x12. Javascript - Warm up
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/303/Javascript-535.png.jpeg)
+![](https://s3.amazonaws.com/intranet-projects-files/notreblohschool-higher-level_programming+/303/Javascript-535.png.jpeg)
 
 **What you should learn from this project**
 

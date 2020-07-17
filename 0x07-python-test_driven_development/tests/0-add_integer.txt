@@ -35,7 +35,7 @@ Should not calculated infinity float numbers:
        OverflowError: cannot convert float infinity to integer
 
 Should not add string with number:
-       >>> print(add_integer('Holberton', 1))
+       >>> print(add_integer('notrebloh', 1))
        Traceback (most recent call last):
        ...
        TypeError: a must be an integer

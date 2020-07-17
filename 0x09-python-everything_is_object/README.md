@@ -69,7 +69,7 @@
 
      What should those 3 lines print:
 
-     >>> s1 = "Holberton"
+     >>> s1 = "notrebloh"
      >>> s2 = s1
      >>> print(s1 == s2)
 
@@ -77,7 +77,7 @@
 
      What should those 3 lines print:
 
-     >>> s1 = "Holberton"
+     >>> s1 = "notrebloh"
      >>> s2 = s1
      >>> print(s1 is s2)
 
@@ -85,16 +85,16 @@
 
      What should those 3 lines print:
 
-     >>> s1 = "Holberton"
-     >>> s2 = "Holberton"
+     >>> s1 = "notrebloh"
+     >>> s2 = "notrebloh"
      >>> print(s1 == s2)
 
 **9. Is really the same**
 
      What should those 3 lines print:
 
-     >>> s1 = "Holberton"
-     >>> s2 = "Holberton"
+     >>> s1 = "notrebloh"
+     >>> s2 = "notrebloh"
      >>> print(s1 is s2)
 
 **10. And with a list, is it equal**
